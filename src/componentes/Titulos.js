@@ -10,10 +10,9 @@ class Titulos extends React.Component {
       texto2: 'Tengo lo que necesitas.'
     };
   }
-
   render () {
     return(
-      <div className="containerT">
+      <div className="containerT" id="1">
         <div className="titulos">
           <h1 className="principal">¡{this.state.texto}!</h1>
           <h2>{this.state.texto2}</h2>
