@@ -5,14 +5,14 @@ class Formulario extends React.Component {
   render () {
     return (
       <div className="form">
-        <h1 class="principal">Contacto</h1>
+        <h1 className="principal">Contacto</h1>
         <form className="" action="index.html" method="post">
           <p>
-            <label for="nombre">Mi nombre es </label>
+            <label>Mi nombre es </label>
             <input type="text" name="nombre" className="raya"/>
           </p>
           <p>
-            <label for="select">y quiero </label>
+            <label>y quiero </label>
             <select name="select" className="raya">
               <option value="value1">solo decir hola</option>
               <option value="value2">conocer más de ti</option>
@@ -20,7 +20,7 @@ class Formulario extends React.Component {
             </select>
             </p>
             <p>
-              <label for="mensaje">Mensaje (opcional):</label>
+              <label>Mensaje (opcional):</label>
             </p>
             <textarea name="mensaje" rows="8" cols="80" id="mensaje"></textarea>
             <div className="bot">

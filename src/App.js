@@ -7,6 +7,7 @@ import Titulos from './componentes/Titulos';
 import Info from './componentes/Info';
 import Pie from './componentes/Pie';
 import Formulario from './componentes/Formulario';
+import Carrusel from './componentes/Carrusel';
 
 class App extends Component {
   render() {
@@ -27,7 +28,9 @@ class App extends Component {
                     <Pie className="pie"/>
                   </div>
                   <div className="page" id="p3">
-                    <h1>Esto es un portafolio.</h1>
+                    <br/><br/>
+                    <Carrusel/>
+                    <Pie className="pie"/>
                   </div>
                   <div className="page" id="p4">
                     <Formulario/>

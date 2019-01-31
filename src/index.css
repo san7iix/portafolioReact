@@ -1,6 +1,9 @@
 *{
   padding: 0;
   margin: 0;
+}
+
+div:not(.slide){
   transition: all 500ms ease-out;
   -webkit-transition: all 500ms ease-out;
 }
@@ -169,7 +172,7 @@ a{
 .form{
   font-size: 8vh;
   text-align: left;
-  
+
   padding-left: 5%;
 }
 
@@ -206,4 +209,44 @@ option{
 #enviar:hover{
   transform: scale(1.1);
   transition: all 0.2s ease !important;
+}
+
+.carrusel{
+  height: 50%;
+  width: 50%;
+  margin: auto;
+}
+
+.slider{
+  max-width: 70%;
+  margin: auto;
+  top: 10%;
+  border-radius: 10px;
+}
+
+.slider:not(button){
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  background-size: auto;
+}
+
+.slider polygon{
+  fill: white;
+}
+
+.slider:hover{
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.slider div img{
+  z-index: -1;
+  left: 0%;
+  margin: auto;
 }
