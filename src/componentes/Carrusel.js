@@ -5,20 +5,20 @@ import 'react-animated-slider/build/horizontal.css';
 
 const content = [
 	{
-		title: 'Ejemplo 1',
+		title: 'landing web',
 		description:
-		'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.',
-		button: 'Read More',
-		image: 'http://i68.tinypic.com/14bovew.jpg',
+		'Ejemplo de landing web sencilla con 5 secciones y optimizada en tiempos de carga.',
+		button: 'Leer más',
+		image: 'https://i.imgur.com/MkabVWj.jpg',
 		user: 'Luan Gjokaj',
 		userProfile: 'https://i.imgur.com/JSW6mEk.png'
 	},
 	{
-		title: 'Ejemplo 2',
+		title: 'RMproject',
 		description:
-		'Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.',
-		button: 'Discover',
-		image: 'https://i.ibb.co/80xvhcB/motos.jpg',
+		'Sistema de gestión de entrada y salida de vehículos automotor realizado como proyecto de áula.',
+		button: 'Descubrir',
+		image: 'https://i.imgur.com/C5boPw4.jpg',
 		user: 'Erich Behrens',
 		userProfile: 'https://i.imgur.com/0Clfnu7.png'
 	},
@@ -32,13 +32,17 @@ class Carrusel extends React.Component {
         {content.map(
 
           (article, index) =>
-          <div key={index} className="notran">
-            <h2 >{article.title}</h2>
-            <p>{article.description}</p>
-						<img src={article.image} alt=""/>
+					<div>
+						<div class="tituloD">
+							<h2 >{article.title}</h2>
+							<p>{article.description}</p>
+							<br/>
+							<a>{article.button}</a>
+						</div>
 						<br/>
-            <button>{article.button}</button>
-          </div>
+	          <div key={index} className="imagen" style={{ background: `url('${article.image}') no-repeat center center` }}>
+	          </div>
+					</div>
           )
         }
       </Slider>

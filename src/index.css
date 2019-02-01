@@ -215,38 +215,59 @@ option{
   height: 50%;
   width: 50%;
   margin: auto;
+
 }
 
 .slider{
-  max-width: 70%;
+  max-width: 90%;
   margin: auto;
-  top: 10%;
   border-radius: 10px;
 }
 
-.slider:not(button){
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  background-size: auto;
-}
-
 .slider polygon{
-  fill: white;
+  fill: black;
 }
 
-.slider:hover{
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  filter: grayscale(0%);
+
+.img{
+  max-width: 70%;
+  display:block;
+  margin:auto;
 }
 
-.slider div img{
-  z-index: -1;
-  left: 0%;
-  margin: auto;
+.img img{
+  width: 100%;
+}
+
+.imagen{
+  height: 100%;
+}
+
+.tituloD a{
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  color: white !important;
+  background: none;
+  font-family: 'Raleway', sans-serif;
+  outline: none;
+  cursor: hand;
+  transition: all 0.5s ease;
+  cursor: hand;
+}
+
+.tituloD a:visited{
+  color: white !important;
+}
+
+.tituloD a:hover{
+  border: 2px solid white;
+  font-weight: bold;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.tituloD a:active{
+  background: white;
+  transition: none;
 }
